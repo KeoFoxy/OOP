@@ -17,9 +17,9 @@
 **[4. Контрольные вопросы](#questions)**
 
 
-##  1. Теоретическая справка <a name = "theory">></a>
+##  1. Теоретическая справка <a name = "theory"></a>
 
-## Запись в файл <a name = "write_to_file">></a>
+## Запись в файл <a name = "write_to_file"></a>
 Один из вариантов обеспечить потоковую запись в файл в языке С++ - использование специализированного класса `fstream`.
 
 Для его использования необходимо добавить следующую директиву:
@@ -37,7 +37,7 @@
 
 ### Открытие файла
 
-Преждем чем работать с файлом, необходимо создать **обьект** класса ofstream: 
+Преждем чем работать с файлом, необходимо создать **объект** класса ofstream: 
 
 ```cpp
 std::ofstream fout;
@@ -135,16 +135,16 @@ QString content = ui->QComboBoxName->currentText();
 ```cpp
 class CSVWriter
 {
-    std::ofstream fout; // Обьект потокового вывода
 public:
-    CSVWriter(...);
-    ~CSVWriter(...);
-    bool isOpen() const { return fout.is_open(); }
-    void writeAll(std::vector<Figures> vec);
+  CSVWriter(...);
+  ~CSVWriter(...);
+  bool isOpen() const { return fout.is_open(); }
+  void writeAll(std::vector<Figures> vec);
 
 private:
-  std::ofstream fout;
-};
+  std::ofstream fout; // Обьект потокового вывода
+
+}; 
 ```
 
 Подумайте, что должно быть у него в конструкторе и деструкторе. 
@@ -153,7 +153,7 @@ private:
 
 ```cpp
 for (...) {
-    fout << data1 << ";" << data2 << ";" << std::endl; // Разделитель ; обязателен
+  fout << data1 << ";" << data2 << ";" << std::endl; // Разделитель ; обязателен
 }
 ```
 
