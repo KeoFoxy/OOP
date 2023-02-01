@@ -37,7 +37,7 @@
 
 ### Открытие файла
 
-Преждем чем работать с файлом, необходимо создать **обьект** класса ofstream: 
+Преждем чем работать с файлом, необходимо создать **объект** класса ofstream: 
 
 ```cpp
 std::ofstream fout;
@@ -135,16 +135,16 @@ QString content = ui->QComboBoxName->currentText();
 ```cpp
 class CSVWriter
 {
-    std::ofstream fout; // Обьект потокового вывода
 public:
-    CSVWriter(...);
-    ~CSVWriter(...);
-    bool isOpen() const { return fout.is_open(); }
-    void writeAll(std::vector<Figures> vec);
+  CSVWriter(...);
+  ~CSVWriter(...);
+  bool isOpen() const { return fout.is_open(); }
+  void writeAll(std::vector<Figures> vec);
 
 private:
-  std::ofstream fout;
-};
+  std::ofstream fout; // Обьект потокового вывода
+
+}; 
 ```
 
 Подумайте, что должно быть у него в конструкторе и деструкторе. 
@@ -153,7 +153,7 @@ private:
 
 ```cpp
 for (...) {
-    fout << data1 << ";" << data2 << ";" << std::endl; // Разделитель ; обязателен
+  fout << data1 << ";" << data2 << ";" << std::endl; // Разделитель ; обязателен
 }
 ```
 
