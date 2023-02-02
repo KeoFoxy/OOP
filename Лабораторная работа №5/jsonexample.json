@@ -1,0 +1,16 @@
+{
+    "id": 0,
+    "name": "Lucy",
+    "attributes": {
+        "Intelligence": 20,
+        "Reflexes": 17,
+        "Cool": 18
+    },
+    "weapon": "Monowire",
+    "Affiliation": {
+        "formerly": "Arasaka",
+        "defunct": "Maine's crew"
+    },
+    "Role": "Netrunner",
+    "Partner": "David Martinez"
+}
