@@ -1,26 +1,21 @@
-class JSONReader
-{
+class JSONReader {
 public:
-    JSONReader(const QString &filename)
-    {
+    JSONReader(const QString &filename) {
         fin.open(filename.toLatin1().data());
         fin >> json;
         j_start = json.begin();
     }
-    ~JSONReader()
-    {
+    ~JSONReader() {
         fin.close();
     }
 
-    bool is_open()
-    {
+    bool is_open() {
         return fin.is_open();
     }
 
-    virtual AbstractReader &operator>>(Player &players) override
-    {
-        if (j_start != json.end())
-        {
+    virtual AbstractReader &operator>>(Player &players) override {
+
+        if (j_start != json.end()) {
             players.level = j_start.value()["level"];
             players.HP = j_start.value()["HP"];
             players.name = QString::fromStdString(j_start.value()["Name"]);
@@ -30,8 +25,7 @@ public:
         return *this;
     }
 
-    virtual operator bool() const override
-    {
+    virtual operator bool() const override {
         return j_start - 1 != json.end();
     }
 
@@ -43,15 +37,13 @@ private:
     nlohmann::json::iterator j_start;
 };
 
-std::vector<Player> JSONReader::readAll()
-{
+std::vector<Player> JSONReader::readAll() {
     std::vector<Player> players;
     nlohmann::json json;
 
     fin >> json;
 
-    for (const auto &j : json)
-    {
+    for (const auto &j : json) {
         Player result;
         result.level = j["level"];
         result.HP = j["HP"];
