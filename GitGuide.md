@@ -21,7 +21,7 @@
 
 Мои рекомендации по терминалам:
 
-Для пользовалей <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" height='30' align="center"> 
+Для пользователей <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" height='30' align="center"> 
 * GitBash. Устанавливается вместе с системой Git.
 * PowerShell. Установлен вместе с ОС.
 * [Hyper](https://hyper.is/)
