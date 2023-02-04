@@ -58,7 +58,7 @@
 ## **SSH-Ключ**  
 Как настроить **SSH-ключ** вы можете прочитать в [**этой статье**](https://htmlacademy.ru/blog/useful/git/git-console) или в [**этой**](https://www.atlassian.com/git/tutorials/git-ssh), на крайний случай вам может помочь [**официальная документация GitHub**](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).   
 
-Если что-то не получается, то пишите в [<img src="./tech-pictures/tg-icon.svg" height='50' align="center">](https://t.me/KeoFoxy)
+Если что-то не получается, то пишите в [<img src="../tech-pictures/tg-icon.svg" height='50' align="center">](https://t.me/KeoFoxy)
 
 ## **Работа с репозиториями**  
 
@@ -67,18 +67,18 @@
 
 ### Создаем репозиторий на GitHub.  
 
-![GitHubRepo](./gitGuide-img/create-repo.png)  
+![GitHubRepo](../tech-pictures/gitGuide-img/create-repo.png)  
 
 После того, как мы создали репозиторий, у нас появилась возможность клонировать его себе на устройство. Рекомендуется пользоваться SSH ссылкой.  
 
-![git-clone-repo](./gitGuide-img/git-clone.png)  
+![git-clone-repo](../tech-pictures//gitGuide-img/git-clone.png)  
 
 Копируем ссылку, открываем терминал и используем команду  
 `git clone наша-ссылка`
 
 Предварительно необходимо зайти в нужную директорию, куда вы хотите поместить проект.
 
-![GitHubClone](./gitGuide-img/git-clone-result.png)  
+![GitHubClone](../tech-pictures//gitGuide-img/git-clone-result.png)  
 
 После того, как репозиторий успешно клонировался, необходимо перейти в его папку.  
 
@@ -115,7 +115,7 @@
 
 `git push origin main`
 
-![gitpush](./gitGuide-img/git-push.png)  
+![gitpush](../tech-pictures//gitGuide-img/git-push.png)  
 
 ### Ветки. Branch
 
@@ -129,7 +129,7 @@ Branch (ветка) - это одна из основных концепций �
 
 * `git checkout -b имя-новой-ветки`
 * На странице репозитория. Пишете название новой ветке и создаете
-![new-branch-on-githb](./gitGuide-img/create-new-branch.png)
+![new-branch-on-githb](../tech-pictures//gitGuide-img/create-new-branch.png)
 
 Чтобы переключаться между ветками используйте коменду:  
 
@@ -198,7 +198,7 @@ Branch (ветка) - это одна из основных концепций �
 
 Проблемы сюда:  
 
-![issues](./tech-pictures/issue.png)  
+![issues](../tech-pictures/issue.png)  
 
 Вопросы сюда:
-[<img src="./tech-pictures/tg-icon.svg" height='50' align="center">](https://t.me/KeoFoxy)
+[<img src="../tech-pictures/tg-icon.svg" height='50' align="center">](https://t.me/KeoFoxy)

@@ -150,7 +150,7 @@ const int kDaysInAWeek = 7;
 
 >Стиль написания составных слов, при котором несколько слов пишутся слитно без пробелов, при этом каждое слово внутри фразы пишется с прописной буквы. Стиль получил название CamelCase, поскольку прописные буквы внутри слова напоминают горбы верблюда.
 
-<img src="camelCase.png" width="250" align="center">
+<img src="../tech-pictures/style-guide/camelCase.png" width="250" align="center">
 
 
 ## Как правильно называть функции <a name="how_to_name_functions"></a>
@@ -262,7 +262,7 @@ int a = 5; // Присваиваем число 5 переменной a
 
 Табуляция – это символ, который используется для выравнивания текста по горизонтали, один из основных инструментов форматирования. Например:
 
-![](tabulation.png)
+![](../tech-pictures/style-guide/tabulation.png)
 
 
 
@@ -274,15 +274,15 @@ int a = 5; // Присваиваем число 5 переменной a
 
 1. Перейдите в раздел Инструменты → параметры:
 
-![](parametres.png)
+![](../tech-pictures/style-guide/parametres.png)
 
 2. Перейдите в раздел С++ → CodeStyle -> Изменить:
 
-![](%D1%81pp_tab.png)
+![](../tech-pictures/style-guide/сpp_tab.png)
 
 3. Установите параметры следующим образом:
 
-![](set_tab.png)
+![](../tech-pictures/style-guide/set_tab.png)
 
 4. Готово!
 
