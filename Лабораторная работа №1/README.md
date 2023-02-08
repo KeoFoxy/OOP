@@ -128,16 +128,16 @@ int main() {
 
 #### **Этапы выполнения**  
 
-1. Разобрать пример реализации функции split, проверить работоспособность с помощью отладчика. Найти ошибки в реализации, пофиксить.
+1. Разобрать пример реализации функции split, проверить работоспособность с помощью отладчика.
 ```cpp
-std::vector<std::string> split(const std::string& str, char delim)
-{
+std::vector<std::string> split_line(const std::string &str, char delim) {
+
     std::vector<std::string> tokens;
 
-    if (!str.empty()){
+    if (!str.empty()) {
         size_t start = 0, end;
         do {
-            tokens.push_back(str.substr(start, (end - start)));
+            tokens.push_back(str.substr(start, (str.find(delim, start) - start)));
             end = str.find(delim, start);
             start = end + 1;
         } while (end != std::string::npos);
@@ -146,9 +146,8 @@ std::vector<std::string> split(const std::string& str, char delim)
     return tokens;
 }
 ```  
-2. Используя исправленную функцию split и функции потокового чтения из файла, сделать чтение записей.
+2. Используя функцию split и функции потокового чтения из файла, сделать чтение записей.
 3. Добавить сортировку и вывод данных.  
-
 4. Добавить вывод отсортированных данных в файл.
 
 ---
