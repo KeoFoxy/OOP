@@ -13,22 +13,25 @@ enum Color {
     PINK
 }
 
-struct objects {
+struct object {
     int ID;
     std::string name;
     Color color;
-    int angles;
+    int year;
 };
 
-// Заготовка для второй лабы
-class CSVReader {
-public:
-    CSVReader(const std::string &filename); // <-- Needs to be realised
-    ~CSVReader();                           // <-- Needs to be realised
+std::vector<std::string> split_line(const std::string &str, char delim) {
 
-    bool is_open() { return fin.is_open(); }
-    std::vector<std::string> split_line(const std::string &str, char divider); // <-- Needs to be fixed
-    // std::vector<class _Tp>
-private:
-    std::ifstream fin;
-};
+    std::vector<std::string> tokens;
+
+    if (!str.empty()) {
+        size_t start = 0, end;
+        do {
+            tokens.push_back(str.substr(start, (str.find(delim, start) - start)));
+            end = str.find(delim, start);
+            start = end + 1;
+        } while (end != std::string::npos);
+    }
+
+    return tokens;
+}
