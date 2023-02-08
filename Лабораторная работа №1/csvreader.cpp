@@ -1,10 +1,9 @@
+#include <fstream>
 #include <iostream>
 #include <string>
 #include <vector>
-#include <fstream>
 
-enum Color
-{
+enum Color {
     RED,
     BLUE,
     GREEN,
@@ -14,16 +13,15 @@ enum Color
     PINK
 }
 
-struct objects
-{
+struct objects {
     int ID;
     std::string name;
     Color color;
     int angles;
 };
 
-class CSVReader
-{
+// Заготовка для второй лабы
+class CSVReader {
 public:
     CSVReader(const std::string &filename); // <-- Needs to be realised
     ~CSVReader();                           // <-- Needs to be realised
