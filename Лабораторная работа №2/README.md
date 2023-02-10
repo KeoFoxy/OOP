@@ -125,7 +125,7 @@ public:
 // -------------------------------------- //
 
 void Player::level_up(int lvl) {
-    vevel += lvl;
+    level += lvl;
 }
 
 std::string Player::getName() {
@@ -168,7 +168,7 @@ public:
 Player::Player() {
     //Code
     //Example:
-    std::cout << "Moshi moshi, Constructor-kun desu" << std::endl;
+    std::cout << "Wake up student! We have labs to burn" << std::endl;
 }
 
 Pleyer::~Player(){
@@ -202,7 +202,7 @@ public:
 // -------------------------------------- //
 
 Player::Player() {
-    std::cout << "Moshi moshi, Constructor-kun desu" << std::endl;
+    std::cout << "Wake up student! We have labs to burn" << std::endl;
 }
 
 Player::Player(int lvl, float hp, std::string name) {
