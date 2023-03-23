@@ -135,20 +135,9 @@ console.log(data.Affiliation.formerly); //Output: Arasaka
 ```
 Но так как у нас нету ничего подобного в современном С++ 20го стандарта, то мы воспользуемся [этой библиотекой](https://github.com/nlohmann/json).  
 
-Для ее установки необходимо всего лишь добавить в свой проект один [файл](https://github.com/nlohmann/json/blob/develop/include/nlohmann/json.hpp): `json.hpp`. Файл также находится в папке к этой лаборторной работе.  
+Для ее установки необходимо всего лишь добавить в свой проект один [файл](https://github.com/nlohmann/json/blob/develop/single_include/nlohmann/json.hpp): `json.hpp`. Файл также находится в папке к этой лаборторной работе.  
 
 Чтобы добавить его в проект, нажимаете на ваш проект правой кнопкой мыши и выбираете `добавить существующие файлы`
-
-```cpp
-#include <fstream>
-#include <nlohmann/json.hpp>
-using json = nlohmann::json;
-
-// ...
-
-std::ifstream f("example.json");
-json data = json::parse(f);
-```
 
 Пример работы с данной библиотекой:  
 ```cpp
