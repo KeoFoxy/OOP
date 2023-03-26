@@ -189,7 +189,7 @@ std::auto_ptr<int> myPointer(new int(1337));
 
 ---  
 
-## Ход выполнения  
+## Этапы выполнения  
 
 1. Переопределить метод `QWidget::mouseMoveEvent()` класса вашего виджета. Подбронее [тык.](https://doc.qt.io/qt-5/qmouseevent.html)
 2. Добавить отслеживание движения мыши используя `QWidget::setMouseTracking()`.
