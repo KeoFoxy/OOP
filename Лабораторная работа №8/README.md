@@ -116,9 +116,9 @@ int main() {
 ```cpp
 try {
     bool TheEnd = false;
-  if (TheEnd) 
+    if (TheEnd) 
         std::cout << "Congratulations! You've killed The Ender Dragon!" << std::endl;
-   else 
+    else 
         throw (TheEnd);
 }
 catch (bool achievement) {
